@@ -5,7 +5,7 @@ use SubHr\NetworkPaths;
 
 require __DIR__ . '/vendor/autoload.php';
 
-/*$csvDir = readline("Add CSV file directory:");
+$csvDir = readline("Add CSV file directory:");
 if( !file_exists( $csvDir ) ) {
 	readline('**File not found, Click Enter to exit' );
 	exit();
@@ -18,15 +18,13 @@ $input = preg_split('/\s+/', $input);
 if( count( $input ) !== 3 || $input === 'exit' ) {
 	readline('**Wrong input format, Click Enter to exit' );
 	exit();
-}*/
+}
 
-$csvDir = '/Users/sushiladhikari/Sites/subscribe-hr/subhr.csv';
-$input = ['e', 'a', 400 ];
+/*$csvDir = '/Users/sushiladhikari/Sites/subscribe-hr/subhr.csv';
+$input = ['a', 'f', 1200 ];*/
 
 $prepareCsv = prepareCsv::getInstance();
 $dataStructure = $prepareCsv->readCsv( $csvDir );
-
-var_dump( $dataStructure );
 
 if( empty( $dataStructure )) {
 	readline('**Wrong data at CSV, Click Enter to exit' );

@@ -32,6 +32,7 @@ class prepareCsv {
 				}
 
 				$dataStructure[ $start ][$destination] = $latency;
+				$dataStructure[ $destination ][$start] = $latency;
 				
 			}
 		  fclose($handle);
