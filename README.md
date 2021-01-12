@@ -3,9 +3,10 @@ Here we are using [Depth-first search](https://en.wikipedia.org/wiki/Depth-first
 
 ## Installation
 1. Download project file from GITHUB, https://github.com/sushil-adhikari/subscribe-hr.git
-2. Go to project directory /subscriber-hr
-3. Open command terminal and type: php index.php
-4. Provide all the requested details
+2. Go to project root directory, open terminal and type composer install.
+3. Go to project root directory
+4. Open command terminal and type: php index.php. This will run index.php file
+5. Provide all the requested details
 
 
 ## Unit testing
