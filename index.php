@@ -21,7 +21,7 @@ if( count( $input ) !== 3 || $input === 'exit' ) {
 }
 
 /*$csvDir = '/Users/sushiladhikari/Sites/subscribe-hr/subhr.csv';
-$input = ['a', 'f', 1200 ];*/
+$input = ['e', 'a', 80 ];*/
 
 $prepareCsv = prepareCsv::getInstance();
 $dataStructure = $prepareCsv->readCsv( $csvDir );
@@ -31,10 +31,10 @@ if( empty( $dataStructure )) {
 	exit();
 }
 
-
 $networkPath = NetworkPaths::getInstance();
 $networkPath->setDataStructure( $dataStructure );
 $networkPath->generatePossiblePath( $input );
-echo $networkPath->getResults();
+readline($networkPath->getResults());
+exit();
 
 
