@@ -1,0 +1,15 @@
+{
+    "name": "sushiladhikari/networkpath",
+    "description": "Technical Test",
+    "authors": [
+        {
+            "name": "Sushil Adhikari",
+            "email": "adhsushil7@gmail.com"
+        }
+    ],
+    "autoload": {
+		"psr-4": {
+			"SubHr\\": "src/"
+		}
+	}
+}
